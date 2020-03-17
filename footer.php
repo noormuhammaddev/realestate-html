@@ -1,5 +1,5 @@
 <footer>
-	<div class="countanir">
+	<div class="container">
 		<div class="row">
 			<div class="col-md-4">
 				<h3>Company</h3>
