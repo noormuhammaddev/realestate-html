@@ -5,6 +5,9 @@
 //mixins
 @import "helpers/_mixins";
 
+// bootstrap
+@import "venders/_bootstrap.scss.css";
+
 //components
 @import "components/_normalize";
 @import "components/_common";
