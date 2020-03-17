@@ -1,2 +1,3 @@
 # dependencies
 assets/node_modules/*
+assets/dist/css/default.min.css
