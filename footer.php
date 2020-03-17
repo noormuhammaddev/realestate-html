@@ -5,7 +5,7 @@
 				<h3>Company</h3>
 					<ul>
 						<li><a href="#">About us</a></li>
-						<li><a href="#">Advertisign</a></li>
+						<li><a href="#">Advertising</a></li>
 						<li><a href="#">careers</a></li>
 						<li><a href="#">terms off use</a></li>
 						<li><a href="#">privacy policy</a></li>
