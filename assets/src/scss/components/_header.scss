@@ -1,4 +1,59 @@
 header {
   background-color: $white;
-  height: 90px;
+
+  .header-inner {
+    position: relative;
+    height: 90px;
+
+    .logo {
+      width: 90px;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .navigation {
+      padding: 0px 150px 0 184px;
+      position: relative;
+
+      ul {
+        li {
+          a {
+            font-size: 15px;
+            color: $primary;
+            border-top: 5px solid transparent;
+            line-height: 85px;
+            padding: 0 10px;
+            margin: 0 5px;
+
+            &:hover, &.active {
+              color: $orange;
+              border-top-color: $orange;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+
+    .masthead {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 1;
+
+      .item {
+        display: inline-block;
+        vertical-align: middle;
+
+        .btn {
+          min-width: 129px;
+
+          box-shadow: none;
+        }
+      }
+    }
+  }
 }

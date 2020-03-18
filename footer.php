@@ -25,6 +25,7 @@
 			</div>
 		</div>
 	</div>
-
-
 </footer>
+
+<!-- add footer includes files -->
+<?php include 'includes/footer-includes.php'; ?>

@@ -1,26 +1,63 @@
+* {
+  transition: 0.2s ease-in-out all;
+}
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 14px;
   line-height: 1.5;
   color: $primary;
+}
 
-  a, span {
+a, span {
+  display: inline-block;
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+
+  li {
     display: inline-block;
-    text-decoration: none;
+    list-style: none;
+
+    a {
+      display: block;
+    }
+  }
+}
+
+.btn {
+  min-width: 160px;
+  height: 48px;
+  font-size: 14px;
+  @include border-radius(35px, 35px, 35px, 35px);
+  @include box-shadow(0px, 2px, 8px, rgba(63, 63, 63, 0.3));
+
+  &.btn-primary {
+    background-color: $dark-blue;
+    border-color: $dark-blue;
   }
 
-  ul {
-    margin: 0;
-    padding: 0;
+  &.btn-outline-primary {
+    border-color: $dark-blue;
+    color: $dark-blue;
 
-    li {
-      display: inline-block;
-      list-style: none;
-
-      a {
-        display: block;
-      }
+    &:hover {
+      background-color: $dark-blue;
+      color: $white;
     }
   }
 
+  &.btn-warning {
+    background-color: $orange;
+    border-color: $orange;
+
+    color: $white;
+  }
+
+  &.btn-lg {
+    height: 56px;
+    font-size: 16px;
+  }
 }
