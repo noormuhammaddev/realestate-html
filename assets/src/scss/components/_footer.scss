@@ -10,9 +10,14 @@ footer{
 
 	ul{
 		li{
+			display: block;
+			color:$white;
 			a{
 				color: $white;
-
+				
+				&:hover{
+					color:$white;
+				}
 			}
 		}
 	}
