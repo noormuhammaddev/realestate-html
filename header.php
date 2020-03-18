@@ -17,8 +17,14 @@
 
       <!-- header right -->
       <div class="masthead">
-        <div class="item dropdown">
-          <div class=""></div>
+        <div class="item">
+          <div class="custom-dropdown">
+            <div class="active-item"></div>
+            <ul>
+              <li>Eng</li>
+              <li>Arabic</li>
+            </ul>
+          </div>
         </div>
 
         <div class="item dropdown">
