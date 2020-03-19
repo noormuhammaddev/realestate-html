@@ -2,6 +2,7 @@ footer{
 	background-color: $dark-blue;
 	padding-top: 80px;
 	padding-bottom: 30px;
+	margin-top: 80px;
 
 	h3{
 		font-size: 22px;
@@ -72,7 +73,7 @@ footer{
 			background: none;
 			height: 48px;
 			color: $white;
-			padding-right: 149px;
+			padding-right: 110px;
 			margin-bottom: 40px;
 
 			&:focus{
@@ -92,6 +93,7 @@ footer{
 		a{
 			width: 30px;
 			height: 30px;
+			margin-right: 30px;
 			
 			&.fb{
 				background-image: url(../../images/icon_facebook.svg);

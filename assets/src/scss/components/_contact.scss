@@ -1,0 +1,54 @@
+.contact{
+
+    form {
+        button[type="submit"] {
+            margin-top: 30px;
+        }
+    }
+
+    .contact-info-container{
+            margin-top: 30px;
+        .contact-info{
+
+            li{
+                padding-left: 35px;
+                margin-bottom: 36px;
+                max-width: 270px;
+                display:block;
+                
+    
+                &::before{
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                }
+                &.address{
+                    &::before{
+                    width: 20px;
+                    height: 28px;
+                    background: url(../../images/map-black.svg) no-repeat;
+    
+                    }
+                }
+    
+                &.email{
+                    &::before{
+                        width: 20px;
+                        height: 15px;
+                        background: url(../../images/email-black.svg) no-repeat;
+                                        
+                    }
+                }
+    
+                &.phone{
+                    &::before{
+                        width: 20px;
+                        height: 20px;
+                        background: url(../../images/phone-black.svg) no-repeat;
+                    }
+                }
+            }
+        }    
+    }
+    
+}
