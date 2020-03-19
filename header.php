@@ -2,10 +2,12 @@
   <div class="container">
     <div class="header-inner">
       <!-- logo -->
-      <a href="/" class="logo"> <img src="assets/images/logo.svg" alt="logo" /></a>
+      <a href="http://localhost/realestate-html" class="logo" data-aos="fade-down"> 
+        <img src="assets/images/logo.svg" alt="logo" />
+      </a>
 
       <!-- navigation -->
-      <div class="navigation">
+      <div class="navigation" data-aos="fade-down" data-aos-delay="100">
         <ul>
           <li><a href="buy.php" class="active">Buy</a></li>
           <li><a href="rent.php">Rent</a></li>
@@ -16,7 +18,7 @@
       </div>
 
       <!-- header right -->
-      <div class="masthead">
+      <div class="masthead" data-aos="fade-down" data-aos-delay="200">
         <div class="item">
           <div class="custom-dropdown">
             <div class="active-item text-uppercase">uae</div>

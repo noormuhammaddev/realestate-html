@@ -9,8 +9,8 @@ header {
       width: 90px;
       position: absolute;
       left: 0;
-      top: 50%;
-      transform: translateY(-50%);
+      top: 30px;
+      z-index: 1;
     }
 
     .navigation {
@@ -40,8 +40,7 @@ header {
     .masthead {
       position: absolute;
       right: 0;
-      top: 50%;
-      transform: translateY(-50%);
+      top: 23px;
       z-index: 1;
 
       .item {

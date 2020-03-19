@@ -14,14 +14,14 @@
     <section class="hero-section">
       <div class="container">
 
-        <div class="hero-carousel">
+        <div class="hero-carousel"  data-aos="fade-left">
           <ul id="hero-carousel" class="owl-carousel carousel">
             <li><img src="assets/images/hero-slider/banner.jpg" alt="slider image" class="img-fluid"/></li>
             <li><img src="assets/images/hero-slider/banner.jpg" alt="slider image" class="img-fluid"/></li>
           </ul>
         </div>
 
-        <div class="serach-form">
+        <div class="serach-form"  data-aos="fade-right">
           <h1>Search Properties</h1>
           <p>Redefining the experience of selling, buying & renting properties in this region.</p>
 
@@ -218,7 +218,7 @@
     </section>
 
     <!-- recommended properties -->
-    <section class="recomended-properties">
+    <section class="recomended-properties" data-aos="fade-up">
       <div class="container">
         <h2>Recommended Properties</h2>
         <a href="#" class="show-more">Show More</a>
@@ -289,7 +289,7 @@
     </section>
 
     <!-- Popular Categories -->
-    <section class="popular-categories">
+    <section class="popular-categories" data-aos="fade-up">
       <div class="container">
         <h2>Popular Categories</h2>
 
@@ -368,7 +368,7 @@
     </section>
 
     <!-- Property Listing -->
-    <section class="property-listings">
+    <section class="property-listings" data-aos="fade-up">
       <div class="container">
         <div class="row">
           <div class="col-md-3 col-sm-6 col-xs-12">
