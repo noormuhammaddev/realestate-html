@@ -1,7 +1,18 @@
 .hero-section {
+  height: 630px;
+
+  .container {
+    position: relative;
+  }
+
   .serach-form {
     width: 370px;
+    display: inline-block;
 
+    .col-md-6, .col-md-12 {
+      padding-left: 7px;
+      padding-right: 7px;
+    }
     p {
       line-height: 24px;
       font-size: 16px;
@@ -58,8 +69,43 @@
       }
 
       .tabs-content {
-        .tab-data {
-          
+        .form-container {
+          padding: 30px 8px 30px;
+
+          .search-btn {
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+  }
+
+  .hero-carousel {
+    width: 642px;
+    position: absolute;
+    right: 0;
+
+    ul {
+      li {
+        @include border-radius(10px, 0, 0, 10px);
+        overflow: hidden;
+      }
+
+      .owl-dots {
+        margin-top: 14px;
+        text-align: center;
+
+        button {
+          width: 29px;
+          height: 5px;
+          background: $orange;  
+          @include border-radius(50px, 50px, 50px, 50px);
+          margin: 0 7px;
+          opacity: 0.2;
+
+          &.active {
+            opacity: 0.8;
+          }
         }
       }
     }

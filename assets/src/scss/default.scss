@@ -5,8 +5,9 @@
 //mixins
 @import "helpers/_mixins";
 
-// bootstrap
-@import "venders/_bootstrap.scss.css";
+// venders
+@import "venders/bootstrap";
+@import "venders/owl.carousel";
 
 //components
 @import "components/_normalize";
@@ -14,4 +15,7 @@
 @import "components/header";
 @import "components/_footer";
 @import "components/hero-section";
+@import "components/properties";
+
+
 

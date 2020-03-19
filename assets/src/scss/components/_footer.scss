@@ -6,19 +6,124 @@ footer{
 	h3{
 		font-size: 22px;
 		color: $white;
+		margin-bottom: 20px;
 	}
 
 	ul{
 		li{
 			display: block;
 			color:$white;
+			position: relative;
+			margin-bottom: 8px;
 			a{
 				color: $white;
 				
 				&:hover{
 					color:$white;
+					text-decoration: none;
 				}
 			}
 		}
+
+		&.contact-info{
+			li{
+				padding-left: 35px;
+				margin-bottom: 36px;
+				max-width: 270px;
+
+				&::before{
+					content: '';
+					position: absolute;
+					left: 0;
+				}
+				&.address{
+					&::before{
+					width: 20px;
+					height: 28px;
+					background: url(../../images/map-marker.svg) no-repeat;
+
+					}
+				}
+
+				&.email{
+					&::before{
+						width: 20px;
+						height: 15px;
+						background: url(../../images/email.svg) no-repeat;
+										
+					}
+				}
+
+				&.phone{
+					&::before{
+						width: 20px;
+						height: 20px;
+						background: url(../../images/phone.svg) no-repeat;
+					}
+				}
+			}
+		}
+	}
+
+	.newsleter-field{
+		position: relative;
+
+		input.form-control{
+			background: none;
+			height: 48px;
+			color: $white;
+			padding-right: 149px;
+			margin-bottom: 40px;
+
+			&:focus{
+				outline: none;
+				background-color: none;
+			}
+		}
+		.btn{
+			position: absolute;
+			right: -20px;
+			top: 0;
+			min-width: 120px;
+		}
+	}
+
+	.social-media{
+		a{
+			width: 30px;
+			height: 30px;
+			
+			&.fb{
+				background-image: url(../../images/icon_facebook.svg);
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+
+			&.insta{
+				background-image: url(../../images/icon_insta.svg);
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+
+			&.twitter{
+				background-image: url(../../images/icon_twitter.svg);
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+
+			&.gplus{
+				background-image: url(../../images/icon_google+.svg);
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+		}
+		
+	}
+
+	.copy-right{
+		color: $white;
+		border-top: 1px solid white;
+		margin-top: 80px;
+		padding-top: 13px;
 	}
 }

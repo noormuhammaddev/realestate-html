@@ -29,7 +29,7 @@
           </div>
         </div>
 
-        <div class="item dropdown">
+        <div class="item">
         <div class="custom-dropdown">
             <div class="active-item text-uppercase">Eng</div>
             <ul>
