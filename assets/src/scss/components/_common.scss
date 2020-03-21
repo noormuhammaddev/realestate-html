@@ -69,6 +69,7 @@ ul {
   
   &.cta {
     min-width: 240px;
+
     &:after {
       content: '';
       display: inline-block;
@@ -78,6 +79,31 @@ ul {
       background: url(../../images/arrow-right-white.svg) no-repeat;
       margin-left: 16px;
     }
+  }
+
+  &.width-left-icon {
+    text-align: center;
+    font-size: 18px;
+    min-width: 260px;
+
+    span {
+      position: absolute;
+      left: 35px;
+      top: 9px;
+    }
+  }
+}
+
+.btn-link {
+  color: $primary;
+  display: inline-block;
+  vertical-align: middle;
+  background: none;
+  border: 0;
+  margin-top: 10px;
+
+  &:focus {
+    outline: none;
   }
 }
 
@@ -155,6 +181,7 @@ ul {
 
 h1, h2, h3, h4, h5, h6 {
   color: $primary;
+  margin-top: 0;
 }
 
 h1 {
@@ -320,5 +347,45 @@ section {
     width: 91px;
     height: 91px;
     background: $dark-blue;
+  }
+}
+
+// breadcrumb 
+.breadcrumb-realestate {
+  li {
+    opacity: 0.5;
+    padding: 0 10px 0 6px;
+
+    &:after {
+      content: '|';
+      position: absolute;
+      right: -1px;
+      top: 1px;
+    }
+
+    &:last-child {
+      &::after {
+        display: none;
+      }
+    }
+
+    a {
+      color: $primary;
+    }
+  }
+}
+// pagination
+.costum-pagination{
+  ul{
+    li{
+      display: inline-block;
+      a{
+        width: 30px;
+        height: 30px;
+        color: $primary;
+
+
+      }
+    }
   }
 }

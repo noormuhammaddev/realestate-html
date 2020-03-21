@@ -21,6 +21,7 @@
           </ul>
         </div>
 
+        <!-- search form -->
         <div class="serach-form"  data-aos="fade-right">
           <h1>Search Properties</h1>
           <p>Redefining the experience of selling, buying & renting properties in this region.</p>
@@ -223,11 +224,16 @@
         <h2>Recommended Properties</h2>
         <a href="#" class="show-more">Show More</a>
         <div class="row">
-          <div class="col-md-4 col-sm-4 col-xs-12">
-            <div class="property-block width-detail">
+          <div class="col-md-4 col-sm-4 col-xs-12" data-aos="fade-up" >
+            <a href="#" class="property-block width-detail">
               <div class="property-img">
-                <img src="assets/images/properties-images/property-1.jpg" alt="peroperty image" />
+                <img src="assets/images/properties-images/property-1.jpg" alt="peroperty image">
               </div>
+              
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
 
               <div class="property-description">
                 <h4>Jumeirah Island</h4>
@@ -240,14 +246,19 @@
                   <div class="item area">1075 sqft</div>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
           
-          <div class="col-md-4 col-sm-4 col-xs-12">
-            <div class="property-block width-detail">
+          <div class="col-md-4 col-sm-4 col-xs-12" data-aos="fade-up" >
+            <a href="#" class="property-block width-detail">
               <div class="property-img">
-                <img src="assets/images/properties-images/property-2.jpg" alt="peroperty image" />
+                <img src="assets/images/properties-images/property-2.jpg" alt="peroperty image">
               </div>
+
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
 
               <div class="property-description">
                 <h4>Jumeirah Island</h4>
@@ -260,14 +271,19 @@
                   <div class="item area">2200 sqft</div>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
 
-          <div class="col-md-4 col-sm-4 col-xs-12">
-            <div class="property-block width-detail">
+          <div class="col-md-4 col-sm-4 col-xs-12" data-aos="fade-up" >
+            <a href="#" class="property-block width-detail">
               <div class="property-img">
-                <img src="assets/images/properties-images/peroperty-3.jpg" alt="peroperty image" />
+                <img src="assets/images/properties-images/peroperty-3.jpg" alt="peroperty image">
               </div>
+
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
 
               <div class="property-description">
                 <h4>Jumeirah Island</h4>
@@ -280,7 +296,7 @@
                   <div class="item area">2200 sqft</div>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
 
@@ -295,73 +311,73 @@
 
         <ul id="popular-properties" class="owl-carousel carousel">
           <li>
-            <div class="property-block">
+            <a href="#" class="property-block">
               <div class="property-img">
                 <img src="assets/images/properties-images/prop-1.jpg" alt="peroperty image" />
                 <h3>Monthly Short Term for Rent</h3>
               </div>
-            </div>
+            </a>
           </li>
 
           <li>
-            <div class="property-block">
+            <a href="#" class="property-block">
               <div class="property-img">
                 <img src="assets/images/properties-images/prop-2.jpg" alt="peroperty image" />
                 <h3>Commercial for Rent</h3>
               </div>
-            </div>
+            </a>
           </li>
 
           <li>
-            <div class="property-block">
+            <a href="#" class="property-block">
               <div class="property-img">
                 <img src="assets/images/properties-images/prop-3.jpg" alt="peroperty image" />
                 <h3>Luxury Villas for Rent</h3>
               </div>
-            </div>
+            </a>
           </li>
 
           <li>
-            <div class="property-block v2">
+            <a href="" class="property-block v2">
               <div class="property-img">
                 <img src="assets/images/properties-images/prop-4.jpg" alt="peroperty image" />
                 <h3>Appartments for Rent</h3>
               </div>
-            </div>
+            </a>
           </li>
           <li>
-            <div class="property-block">
+            <a href="" class="property-block">
               <div class="property-img">
                 <img src="assets/images/properties-images/prop-2.jpg" alt="peroperty image" />
                 <h3>Commercial for Rent</h3>
               </div>
-            </div>
+            </a>
           </li>
 
           <li>
-            <div class="property-block">
+            <a href="" class="property-block">
               <div class="property-img">
                 <img src="assets/images/properties-images/prop-3.jpg" alt="peroperty image" />
                 <h3>Luxury Villas for Rent</h3>
               </div>
-            </div>
+            </a>
           </li>
           <li>
-            <div class="property-block">
+            <a href="" class="property-block">
               <div class="property-img">
                 <img src="assets/images/properties-images/prop-2.jpg" alt="peroperty image" />
                 <h3>Commercial for Rent</h3>
               </div>
-            </div>
+            </a>
           </li>
 
           <li>
-            <div class="property-block">
+            <a href="" class="property-block">
               <div class="property-img">
                 <img src="assets/images/properties-images/prop-3.jpg" alt="peroperty image" />
                 <h3>Luxury Villas for Rent</h3>
               </div>
-            </div>
+            </a>
           </li>
         </ul>
       </div>

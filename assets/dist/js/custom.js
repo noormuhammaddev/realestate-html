@@ -84,5 +84,39 @@ jQuery(document).ready(() => {
       }
     });
   }
+
+  // hero carousel lg
+  const hero_carousel_lg = jQuery('#hero-carousel-lg');
+  if (hero_carousel_lg.length){
+    hero_carousel_lg.owlCarousel({
+      loop: true,
+      nav: true,
+      dots: false,
+      margin: 13,
+      stagePadding: 50,
+      responsive:{
+        0:{
+          items:1
+        },
+        768:{
+          items:1,
+          stagePadding: 50,
+        },
+        992:{
+          items:1,
+          stagePadding: 100,
+        },
+        1200:{
+          items:1,
+          stagePadding: 200,
+        },
+        1366:{
+          items:1,
+          stagePadding: 300,
+        },
+        
+      }
+    });
+  }
   
 })

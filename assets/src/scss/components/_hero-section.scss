@@ -18,95 +18,64 @@
       font-size: 16px;
       margin-bottom: 24px;
     }
+  }
+}
 
-    .search-tabs-container {
-      .tabs {
-        ul {
-          width: 240px;
-          height: 40px;
-          @include border-radius(35px, 35px, 35px, 35px);
-          background-color: $stone-grey;
-          display: flex;
-          position: relative;
+.search-tabs-container {
+  .tabs {
+    ul {
+      width: 240px;
+      height: 40px;
+      @include border-radius(35px, 35px, 35px, 35px);
+      background-color: $stone-grey;
+      display: flex;
+      position: relative;
 
-          &:before {
-            content: '';
-            position: absolute;
-            width: 120px;
-            height: 40px;
-            background: $dark-blue;
-            @include border-radius(35px, 35px, 35px, 35px);
-            left: 0;
-          }
+      &:before {
+        content: '';
+        position: absolute;
+        width: 120px;
+        height: 40px;
+        background: $dark-blue;
+        @include border-radius(35px, 35px, 35px, 35px);
+        left: 0;
+      }
 
-          li {
-            flex: 1;
-            text-align: center;
-            line-height: 40px;
-            color: $grey;
-            z-index: 1;
-            cursor: pointer;
-          }
+      li {
+        flex: 1;
+        text-align: center;
+        line-height: 40px;
+        color: $grey;
+        z-index: 1;
+        cursor: pointer;
+      }
 
-          &.tab-buy {
-            #tab-buy {
-              color: $white;
-            }
-          }
-
-          &.tab-rent {
-            #tab-rent {
-              color: $white;
-            }
-
-            &:before {
-              left: auto;
-              right: 0;
-            }
-          }
-          
+      &.tab-buy {
+        #tab-buy {
+          color: $white;
         }
       }
 
-      .tabs-content {
-        .form-container {
-          padding: 30px 8px 30px;
+      &.tab-rent {
+        #tab-rent {
+          color: $white;
+        }
 
-          .search-btn {
-            margin-top: 5px;
-          }
+        &:before {
+          left: auto;
+          right: 0;
         }
       }
+      
     }
   }
 
-  .hero-carousel {
-    width: 642px;
-    position: absolute;
-    right: 0;
+  .tabs-content {
+    .form-container {
+      padding: 30px 8px 30px;
 
-    ul {
-      li {
-        @include border-radius(10px, 0, 0, 10px);
-        overflow: hidden;
-      }
-
-      .owl-dots {
-        margin-top: 14px;
-        text-align: center;
-
-        button {
-          width: 29px;
-          height: 5px;
-          background: $orange;  
-          @include border-radius(50px, 50px, 50px, 50px);
-          margin: 0 7px;
-          opacity: 0.2;
-
-          &.active {
-            opacity: 0.8;
-          }
-        }
+      .search-btn {
+        margin-top: 5px;
       }
     }
   }

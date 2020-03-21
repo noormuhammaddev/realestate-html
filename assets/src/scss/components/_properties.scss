@@ -23,8 +23,36 @@
 }
 
 .property-block {
-  margin-bottom: 25px;
+  margin-bottom: 40px;
+  display: block;
+  color: $primary;
 
+  &:hover {
+    color: $primary;
+  }
+
+  label {
+    position: absolute;
+    top: 17px;
+    right: 15px;
+    cursor: pointer;
+    z-index: 1;
+
+    span {
+      width: 25px;
+      height: 23px;
+      background: url(../../images/heart-white-outline.svg) no-repeat;
+    }
+
+    input {
+      opacity: 0;
+      position: absolute;
+
+      &:checked + span {
+        background: url(../../images/heart-red-filled.svg) no-repeat;
+      }
+    }
+  }
   .property-img {
     height: 225px;
     @include border-radius(12px, 12px, 12px, 12px);
@@ -90,48 +118,22 @@
         font-size: 26px;
         line-height: 39px;
         margin-bottom: 12px;
-      }
-  
-      .features {
-        display: flex;
-  
-        .item {
-          flex: 1;
-          opacity: 0.8;
-          
-          &:before {
-            content: '';
-            display: inline-block;
-            margin-right: 10px;
-            vertical-align: middle;
-            opacity: 0.9;
-          }
-  
-          &.beds {
-            &:before {
-              width: 29px;
-              height: 21px;
-              background: url(../../images/feature-icons/beds.svg);
-            }
-          }
-  
-          &.baths {
-            &:before {
-              width: 31px;
-              height: 28px;
-              background: url(../../images/feature-icons/baths.svg);
-            }
-          }
-  
-          &.area {
-            &:before {
-              width: 23px;
-              height: 23px;
-              background: url(../../images/feature-icons/area.svg);
-            }
-          }
-        }
+        color: $primary;
+        opacity: 0.8;
       }
     }
+  }
+}
+
+.saved-properties {
+  h2 {
+    margin-top: 5px;
+    margin-bottom: 30px;
+  }
+}
+
+.search-results {
+  .search-tabs-container {
+    padding: 24px 0 20px;
   }
 }

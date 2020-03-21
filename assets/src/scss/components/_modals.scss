@@ -1,0 +1,18 @@
+.modal.custom-modal {
+  .modal-dialog {
+    .modal-content {
+      .modal-header {
+        .close {
+          background: url(../../images/close-round-dark.svg) no-repeat center;
+          right: 10px;
+          top: 15px;
+          opacity: 1;
+        }
+      }
+
+      .modal-body {
+        padding: 30px 70px;
+      }
+    }
+  }
+}
