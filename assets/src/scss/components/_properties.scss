@@ -1,5 +1,10 @@
 
 .recomended-properties {
+
+  h2 {
+    margin-bottom: 30px;
+    padding-right: 150px;
+  }
   .show-more {
     position: absolute;
     right: 15px;
@@ -133,7 +138,47 @@
 }
 
 .search-results {
-  .search-tabs-container {
-    padding: 24px 0 20px;
+  .serach-form {
+    padding: 24px 0 40px;
+  }
+
+  h2 {
+    padding-right: 110px;
+  }
+
+  .filter-toggle {
+    position: absolute;
+    right: 15px;
+    top: 36px;
+    z-index: 10;
+
+    .toggle {
+      cursor: pointer;
+      color: $dark-blue;
+      min-width: 98px;
+
+      &:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 8px;
+        width: 13px;
+        height: 9px;
+        background: url(../../images/arrow-up-blue.svg) no-repeat;
+      }
+
+      &#show-filter:after {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+#popular-properties {
+  li {
+    width: 100%;
+    img {
+      width: 100%;
+    }
   }
 }

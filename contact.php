@@ -18,7 +18,7 @@
     <section class="contact">
         
         <div class=container>
-            <h1 data-aos="fade-up">Contact Us</h1>
+            <h1 class="page-heading" data-aos="fade-up">Contact Us</h1>
             <h2 data-aos="fade-up">How can we help you?</h2>
             <form data-aos="fade-up">
                 <div class="row">

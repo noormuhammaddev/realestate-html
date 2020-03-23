@@ -2,7 +2,6 @@ footer{
 	background-color: $dark-blue;
 	padding-top: 80px;
 	padding-bottom: 30px;
-	margin-top: 80px;
 
 	h3{
 		font-size: 22px;
@@ -11,6 +10,10 @@ footer{
 	}
 
 	ul{
+		@include breakpoint(md) {
+			margin-bottom: 40px;
+		}
+
 		li{
 			display: block;
 			color:$white;
@@ -69,17 +72,23 @@ footer{
 	.newsleter-field{
 		position: relative;
 
+		@include breakpoint(sm) {
+			max-width: 300px;
+		}
+
 		input.form-control{
 			background: none;
 			height: 48px;
 			color: $white;
 			padding-right: 110px;
 			margin-bottom: 40px;
+			border-color: $light-blue;	
 
 			&:focus{
 				outline: none;
 				background-color: none;
 			}
+			
 		}
 		.btn{
 			position: absolute;
@@ -124,8 +133,12 @@ footer{
 
 	.copy-right{
 		color: $white;
-		border-top: 1px solid white;
+		border-top: 1px solid $light-blue;
 		margin-top: 80px;
 		padding-top: 13px;
+
+		@include breakpoint(md) {
+			margin-top: 30px;
+		}
 	}
 }

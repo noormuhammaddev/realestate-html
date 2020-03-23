@@ -1,7 +1,7 @@
 <footer>
 	<div class="container">
 		<div class="row">
-			<div class="col-md-4">
+			<div class="col-lg-4 col-md-6 col-sm-12">
 				<h3>Company</h3>
 					<ul>
 						<li><a href="#">About us</a></li>
@@ -12,7 +12,7 @@
 						<li><a href="#">Blog</a></li>
 					</ul>
 			</div>
-			<div class="col-md-4">
+			<div class="col-lg-4 col-md-6 col-sm-12">
 				<h3>Contactus</h3>
 					<ul class="contact-info">
 						<li class="address">Address: 4th Floor, Beverly Centre, Blue Area, Dubai</li>
@@ -20,7 +20,7 @@
 						<li class="phone"><a href="tell: 123456789">Uan:123456789</a></li>
 					</ul>
 			</div>
-			<div class="col-md-4">
+			<div class="col-lg-4 col-md-6 col-sm-12">
 				<h3>Newsletter</h3>
 				<form>
 					<div class="newsleter-field">

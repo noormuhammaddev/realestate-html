@@ -26,194 +26,112 @@
           <h1>Search Properties</h1>
           <p>Redefining the experience of selling, buying & renting properties in this region.</p>
 
-          <div class="search-tabs-container">
-            <div class="tabs">
-              <ul class="tab-buy" id="tabs">
-                <li id="tab-buy">Buy</li>
-                <li id="tab-rent">Rent</li>
-              </ul>
-            </div>
+          <form class="form-container">
 
-            <div class="tabs-content">
-              <div class="tab-data" id="tab-buy-data">
-                <form class="form-container">
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <div class="input-group mb-3">
-                          <div class="input-group-prepend">
-                            <button class="btn btn-outline-secondary dropdown-toggle" 
-                              type="button" data-toggle="dropdown" aria-haspopup="true" 
-                              aria-expanded="false">Abu Dubai
-                            </button>
-                            <div class="dropdown-menu">
-                              <a class="dropdown-item" href="#">Pakistan</a>
-                              <a class="dropdown-item" href="#">China</a>
-                              <a class="dropdown-item" href="#">USA</a>
-                            </div>
-                          </div>
-                          <input type="text" class="form-control with-left-icon location-map" 
-                          aria-label="Text input with dropdown button" placeholder="Enter your location">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <div class="radio-group">
+                  <label>
+                    <input type="radio" name="houseType" checked />
+                    <span><font>Buy</font></span>
+                  </label>
 
-                  <div class="row">
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                      <div class="form-group">
-                        <select class="form-control">
-                          <option>Property Type</option>
-                          <option>House</option>
-                          <option>Flats</option>
-                        </select>
-                      </div>
-                    </div>
-
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                      <div class="form-group">
-                        <select class="form-control">
-                          <option>Price Range</option>
-                          <option>200 - 300</option>
-                          <option>301 - 400</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                      <div class="form-group">
-                        <select class="form-control">
-                          <option>Bedrooms Range</option>
-                          <option>2</option>
-                          <option>3</option>
-                        </select>
-                      </div>
-                    </div>
-
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                      <div class="form-group">
-                        <select class="form-control">
-                          <option>Area Range</option>
-                          <option>25 x 30</option>
-                          <option>30 x 50</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                      <div class="form-group">
-                        <select class="form-control">
-                          <option>Amenities</option>
-                          <option>2</option>
-                          <option>3</option>
-                        </select>
-                      </div>
-                    </div>
-
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                      <input type="text" class="form-control with-left-icon search" placeholder="Keyword Search" />
-                    </div>
-                  </div>
-
-                  <button class="btn btn-warning btn-lg search-btn cta" type="submit">Search Properties</button>
-                </form>
-              </div>
-
-              <div class="tab-data d-none" id="tab-rent-data">
-                <form class="form-container">
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <div class="input-group mb-3">
-                          <div class="input-group-prepend">
-                            <button class="btn btn-outline-secondary dropdown-toggle" 
-                              type="button" data-toggle="dropdown" aria-haspopup="true" 
-                              aria-expanded="false">Abu Dubai
-                            </button>
-                            <div class="dropdown-menu">
-                              <a class="dropdown-item" href="#">Pakistan</a>
-                              <a class="dropdown-item" href="#">China</a>
-                              <a class="dropdown-item" href="#">USA</a>
-                            </div>
-                          </div>
-                          <input type="text" class="form-control with-left-icon location-map" 
-                          aria-label="Text input with dropdown button" placeholder="Enter your location">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                      <div class="form-group">
-                        <select class="form-control">
-                          <option>Property</option>
-                          <option>House</option>
-                          <option>Flats</option>
-                        </select>
-                      </div>
-                    </div>
-
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                      <div class="form-group">
-                        <select class="form-control">
-                          <option>Rent Price Range</option>
-                          <option>200 - 300</option>
-                          <option>301 - 400</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                      <div class="form-group">
-                        <select class="form-control">
-                          <option>Bedrooms</option>
-                          <option>2</option>
-                          <option>3</option>
-                        </select>
-                      </div>
-                    </div>
-
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                      <div class="form-group">
-                        <select class="form-control">
-                          <option>Area Range</option>
-                          <option>25 x 30</option>
-                          <option>30 x 50</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <!-- <div class="col-md-6 col-sm-6 col-xs-12">
-                      <div class="form-group">
-                        <select class="form-control">
-                          <option>Amenities</option>
-                          <option>2</option>
-                          <option>3</option>
-                        </select>
-                      </div>
-                    </div> -->
-
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                      <div class="form-group">
-                        <input type="text" class="form-control with-left-icon search" placeholder="Keyword Search" />
-                      </div>
-                    </div>
-                  </div>
-
-                  <button class="btn btn-warning btn-lg search-btn cta" type="submit">Search Properties</button>
-                </form>
-              </div>
+                  <label>
+                    <input type="radio" name="houseType" />
+                    <span><font>Rent</font></span>
+                  </label>
+                </div>
+              </div> 
             </div>
           </div>
+              
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <button class="btn btn-outline-secondary dropdown-toggle" 
+                          type="button" data-toggle="dropdown" aria-haspopup="true" 
+                          aria-expanded="false">Abu Dubai
+                        </button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#">Pakistan</a>
+                          <a class="dropdown-item" href="#">China</a>
+                          <a class="dropdown-item" href="#">USA</a>
+                        </div>
+                      </div>
+                      <input type="text" class="form-control with-left-icon location-map" 
+                      aria-label="Text input with dropdown button" placeholder="Enter your location">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <select class="form-control">
+                      <option>Property Type</option>
+                      <option>House</option>
+                      <option>Flats</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <select class="form-control">
+                      <option>Price Range</option>
+                      <option>200 - 300</option>
+                      <option>301 - 400</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <select class="form-control">
+                      <option>Bedrooms Range</option>
+                      <option>2</option>
+                      <option>3</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <select class="form-control">
+                      <option>Area Range</option>
+                      <option>25 x 30</option>
+                      <option>30 x 50</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <select class="form-control">
+                      <option>Amenities</option>
+                      <option>2</option>
+                      <option>3</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                  <div class="form-group">
+                    <input type="text" class="form-control with-left-icon search" placeholder="Keyword Search" />
+                  </div>
+                </div>
+              </div>
+
+              <button class="btn btn-warning btn-lg search-btn cta" type="submit">Search Properties</button>
+            </form>
         </div>
       </div>
     </section>
@@ -224,7 +142,7 @@
         <h2>Recommended Properties</h2>
         <a href="#" class="show-more">Show More</a>
         <div class="row">
-          <div class="col-md-4 col-sm-4 col-xs-12" data-aos="fade-up" >
+          <div class="col-lg-4 col-md-6 col-xs-12" data-aos="fade-up">
             <a href="#" class="property-block width-detail">
               <div class="property-img">
                 <img src="assets/images/properties-images/property-1.jpg" alt="peroperty image">
@@ -249,7 +167,7 @@
             </a>
           </div>
           
-          <div class="col-md-4 col-sm-4 col-xs-12" data-aos="fade-up" >
+          <div class="col-lg-4 col-md-6 col-xs-12" data-aos="fade-up">
             <a href="#" class="property-block width-detail">
               <div class="property-img">
                 <img src="assets/images/properties-images/property-2.jpg" alt="peroperty image">
@@ -274,7 +192,7 @@
             </a>
           </div>
 
-          <div class="col-md-4 col-sm-4 col-xs-12" data-aos="fade-up" >
+          <div class="col-lg-4 col-md-6 col-xs-12" data-aos="fade-up">
             <a href="#" class="property-block width-detail">
               <div class="property-img">
                 <img src="assets/images/properties-images/peroperty-3.jpg" alt="peroperty image">
@@ -387,7 +305,7 @@
     <section class="property-listings" data-aos="fade-up">
       <div class="container">
         <div class="row">
-          <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="col-lg-3 col-md-12">
             <h3>Apartments for Rent</h3>
             <ul>
               <li>Apartments for rent in Dubai Marina</li>
@@ -400,7 +318,7 @@
             </ul>
           </div>
 
-          <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="col-lg-3 col-md-12">
             <h3>Villas for Rent</h3>
             <ul>
               <li>Villas for rent in Dubai Marina</li>
@@ -415,7 +333,7 @@
             </ul>
           </div>
 
-          <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="col-lg-3 col-md-12">
             <h3>Apartments for Rent</h3>
             <ul>
               <li>Apartments for rent in Dubai Marina</li>
@@ -428,7 +346,7 @@
             </ul>
           </div>
 
-          <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="col-lg-3 col-md-12">
             <h3>Rooms for Rent</h3>
             <ul>
               <li>Rooms for rent in Bur Dubai</li>

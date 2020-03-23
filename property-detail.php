@@ -106,11 +106,11 @@
                 <p class="estimated-note">Estimated Mort</p>
 
                 <div class="btns">
-                  <button class="btn btn-warning btn-lg width-left-icon mb-3">
+                  <button class="btn btn-warning btn-lg with-left-icon mb-3">
                     <span><img src="assets/images/phone-white.svg" alt="phone icon"/></span> Call Now
                   </button>
 
-                  <button type="button" class="btn btn-primary btn-lg width-left-icon" 
+                  <button type="button" class="btn btn-primary btn-lg with-left-icon" 
                   data-toggle="modal" data-target="#send_message">
                     <span><img src="assets/images/email-white.svg" alt="phone icon"/></span> Send Message
                   </button>

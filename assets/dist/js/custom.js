@@ -12,6 +12,23 @@ function tabsShowHide(el){
   jQuery('#' + selectedTab+'-data').removeClass('d-none');
 }
 
+// search filter show hide
+function filterShowHide(element) {
+  console.log(element);
+  const searchFilter = jQuery('#filters');
+  if (element === 'show-filter') {
+    searchFilter.slideDown();
+    jQuery('#'+element).addClass('d-none');
+    jQuery('#show-less').removeClass('d-none');
+
+  } else if(element === 'show-less'){
+    searchFilter.slideUp();
+    jQuery('#'+element).addClass('d-none');
+    jQuery('#show-filter').removeClass('d-none');
+
+  }
+}
+
 // ready function
 jQuery(document).ready(() => {
   // init AOS
@@ -46,6 +63,15 @@ jQuery(document).ready(() => {
     tabsShowHide(jQuery(this));
   });
 
+  // nav show - hide
+  jQuery('.nav-toggle').on('click', function(){
+    jQuery('body').addClass('show-nav');
+  });
+
+  jQuery('.close-nav').on('click', function(){
+    jQuery('body').removeClass('show-nav');
+  });
+
   // carousels 
   const hero_carousel = jQuery('#hero-carousel');
   if (hero_carousel.length){
@@ -65,6 +91,14 @@ jQuery(document).ready(() => {
     });
   }
 
+  // search filter show/hide
+  jQuery('.filter-toggle .toggle').on('click', function(){
+    filterShowHide(jQuery(this).attr('id'));
+  });
+
+
+
+
   // popular properties
   const popular_property = jQuery('#popular-properties');
   if (popular_property.length){
@@ -72,10 +106,19 @@ jQuery(document).ready(() => {
       loop: true,
       nav: true,
       dots: false,
-      margin: 30,
+      margin: 15,
+
       responsive:{
         0:{
-          items:1
+          items:1,
+          stagePadding: 30,
+        },
+        768:{
+          items:2,
+          stagePadding:50
+        },
+        992:{
+          items:3
         },
         1000:{
           items:4

@@ -47,10 +47,28 @@
   position: absolute;
   right: 0;
 
+  @include breakpoint(lg) {
+    width: 535px;
+  }
+
+  @include breakpoint(md) {
+    width: 100%;
+    position: relative;
+    margin-bottom: 30px;
+  }
+
   ul {
     li {
-      @include border-radius(10px, 0, 0, 10px);
+      @include border-radius(10px, 10px, 10px, 10px);
       overflow: hidden;
+
+      @include breakpoint(lg) { 
+        height: 470px;
+      }
+
+      @include breakpoint(md) { 
+        height: auto;
+      }
     }
 
     .owl-dots {
@@ -69,6 +87,10 @@
           opacity: 0.8;
         }
       }
+    }
+
+    .owl-nav {
+      margin-top: -50px
     }
   }
 }

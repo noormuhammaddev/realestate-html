@@ -7,7 +7,11 @@
       </a>
 
       <!-- navigation -->
-      <div class="navigation" data-aos="fade-down" data-aos-delay="100">
+      <div class="navigation">
+        <a href="http://localhost/realestate-html" class="mobile-logo" data-aos="fade-down"> 
+          <img src="assets/images/logo.svg" alt="logo" />
+        </a>
+        <div class="close-nav"></div>
         <ul>
           <li><a href="buy.php" class="active">Buy</a></li>
           <li><a href="rent.php">Rent</a></li>
@@ -52,6 +56,8 @@
         </div>
 
       </div>
+
+      <div class="nav-toggle"></div>
     </div>
   </div>
 </header>
