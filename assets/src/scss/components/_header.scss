@@ -182,6 +182,16 @@ header {
       }
     }
   }
+
+  &.session-out {
+    .header-inner {
+      .masthead {
+        @include breakpoint(lg) {
+          right: 0;
+        }
+      }
+    }
+  }
 }
 
 @include breakpoint(lg) {

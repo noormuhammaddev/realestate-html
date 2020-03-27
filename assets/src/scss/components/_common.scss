@@ -2,6 +2,9 @@
   transition: 0.2s ease-in-out all;
   position: relative;
 }
+html, body {
+  min-height: 100%;
+}
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 15px;
@@ -11,6 +14,10 @@ body {
 
   &.member-area-body {
     background: $light-blue;
+  }
+
+  &.dashbaord-body {
+    background-color: $bg-light;
   }
 }
 
@@ -558,5 +565,32 @@ h1.page-heading {
   p {
     font-size: 16px;
     color: $primary-dim;
+  }
+}
+
+hr {
+  border-top: 1px solid $primary;
+  opacity: 0.2;
+  margin: 40px 0;
+  height: 1px;
+}
+
+// upload-file
+.upload-file {
+  height: 210px;
+  background: $white url(../../images/photo.svg) center no-repeat;
+  border: 1px dashed $grey;
+  @include border-radius(4px, 4px, 4px, 4px);
+
+  input[type="file"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    cursor: pointer;
+    z-index: 1;
+    width: 100%;
+    opacity: 0;
   }
 }

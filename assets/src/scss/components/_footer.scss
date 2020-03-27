@@ -141,4 +141,32 @@ footer{
 			margin-top: 30px;
 		}
 	}
+
+	&.simple {
+		padding: 19px 0;
+		background-color: $light-grey;
+		color: $primary-dim;
+
+		.container {
+			display: flex;
+
+			.copy-right-text {
+				flex: 1;
+			}
+			ul {
+				flex: 1;
+				text-align: right;
+				li {
+					display: inline-block;
+					margin: 0;
+
+					a{
+						color: $primary-dim;
+						padding-left: 10px;
+
+					}
+				}
+			}
+		}
+	}
 }

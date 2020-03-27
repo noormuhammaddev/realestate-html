@@ -3,10 +3,10 @@
   min-height: 1000px;
   padding-top: 180px;
   background: url(../../images/page-center-curve.svg) center top;
-  background-repeat: repeat-y;
 
   @include breakpoint(md) {
     padding-top: 0px;
+    background-repeat: repeat-y;
   }
 
   .history-block {
