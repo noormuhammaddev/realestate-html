@@ -1,6 +1,5 @@
 .dashboard-content {
-  padding: 30px 30px 30px 288px;
-  height: 100%;
+  padding: 30px 30px 80px 288px;
 
   h1 {
     font-size: 24px;
@@ -18,6 +17,44 @@
       line-height: 15px;
       @include border-radius(29px, 29px, 29px, 29px);
 
+    }
+  }
+
+  .property-actions{
+    position: absolute;
+    z-index: 10;
+    right: 30px;
+    top: 60px;
+  }
+
+  .info {
+    color: $primary-dim;
+    font-size: 20px;
+    font-weight: 500;
+    margin: -10px 0 42px;
+
+    span {
+      margin-left: 15px;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 6px 15px;
+      line-height: 20px;
+      @include border-radius(8px, 8px, 8px, 8px);
+
+      &.for-sale {
+        color: $dark-blue;
+        background-color: $alto;
+      }
+
+      &.booked {
+        color: $white;
+        background-color: $primary;
+      }
+
+      &.open {
+        color: $primary;
+        background-color: $grey;
+      }
     }
   }
 
@@ -47,6 +84,9 @@
 
   & + footer {
     padding-left: 260px;
+    position: absolute;
+    left: 0;
+    right: 0;
   }
 }
 
@@ -237,5 +277,52 @@
         }
       }
     }
+  }
+}
+
+.add-property-form-container {
+  h2 {
+    margin-top: 50px;
+    font-size: 22px;
+    color: $primary-dim;
+    margin-bottom: 24px;
+  }
+
+  label {
+    color: $primary-dim;
+    font-weight: 500;
+  }
+
+  .checkbox {
+    margin-bottom: 15px;
+  }
+}
+
+.property-status {
+  padding-left: 35px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 22px;
+    background: url(../../images/heart-icon.svg) no-repeat;
+  }
+
+  p {
+    margin-bottom: 4px !important;
+    opacity: 1 !important;
+
+    &.grey-text {
+      color: grey ;
+    }
+
+    &.dark-text {
+      color: $primary ;
+    }
+    
   }
 }
