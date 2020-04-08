@@ -29,6 +29,13 @@ function filterShowHide(element) {
   }
 }
 
+// agent detail tabs 
+function getAgentActiveTab(currentCheck) {
+  jQuery('.detail-tabs-data').hide();
+
+  jQuery('#' + currentCheck + '-data').fadeIn();
+}
+
 // ready function
 jQuery(document).ready(() => {
   // init AOS
@@ -162,4 +169,8 @@ jQuery(document).ready(() => {
     });
   }
   
+  // agent detail tabs
+  jQuery('#agent-detail-data input[name="detail-info"]').on('change', function(){
+    getAgentActiveTab(jQuery(this).val());
+});
 })

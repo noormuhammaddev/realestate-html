@@ -1,0 +1,169 @@
+.agents-page {
+  .filters {
+    margin-bottom: 60px;
+
+    .btn.cta {
+      min-width: 160px;
+      height: 48px;
+      padding-top: 4px;
+
+      @include breakpoint(sm) {
+        width: 100%;
+      }
+    }
+    
+    .form-control {
+      font-size: 12px;
+    }
+
+    .switch{
+      margin-bottom: 30px;
+    }
+  }
+}
+
+// agent block
+.agent-block {
+  background-color: $white;
+  @include box-shadow(0px, 4px, 20px, rgba(63, 63, 63, 0.1));
+  @include border-radius(9px, 9px, 9px, 9px);
+  margin-bottom: 40px;
+  color: $primary;
+
+  .img {
+    height: 225px;
+    @include border-radius(9px, 9px, 9px, 9px);
+    overflow: hidden;
+
+    @include breakpoint(lg) {
+      height: 175px;
+    }
+
+    @include breakpoint(sm) {
+      height: auto;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .detail {
+    padding: 20px 15px 17px;
+
+    h4 {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      color: $primary-dim;
+      margin-bottom: 7px;
+    }
+  }
+}
+
+.languages, .linear-tags {
+  color: $primary;
+  opacity: 0.6;
+  font-size: 11px;
+  font-weight: 300;
+
+  span {
+    font-weight: 500;
+    &:after {
+      content: ',';
+    }
+
+    &:last-child:after {
+      display: none;
+    }
+  }
+}
+
+.property-info {
+  display: flex;
+
+  .item {
+    margin-top: 22px;
+    flex: 1;
+    font-weight: 500;
+
+    .icon-wrapper {
+      height: 18px;
+
+      img {
+        height: 100%;
+      }
+    }
+
+    .property-type {
+      font-size: 12px;
+      line-height: 18px;
+      opacity: 0.4;
+      margin-top: 6px;
+    }
+
+    .property-count {
+      font-size: 15px;
+      opacity: 0.9;
+    }
+  }
+}
+
+.agent-detail {
+  .agent-dp {
+    @include border-radius(9px, 9px, 9px, 9px);
+
+    img {
+      width: 100%;
+    }
+  }
+
+  h2 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: $primary-dim;
+
+  }
+
+  .profession {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    opacity: 0.6;
+    margin-bottom: 5px;
+  }
+
+    
+  ul.more-info {
+    margin-bottom: 20px;
+
+    li {
+      margin-bottom: 8px;
+    }  
+  }
+
+  .property-logo {
+    text-align: right;
+    
+    img {
+      width: 73px;
+    }
+  }
+}
+
+// agent-detail-tabs
+.agent-detail-tabs {
+  margin-top: 60px;
+
+  .landload-detail-tabs-container {
+    padding-top: 40px;
+    .detail-tabs-data {
+      display: none;
+      p {
+        font-size: 16px;
+        color: $primary-dim;
+      }
+    }
+  }
+}
