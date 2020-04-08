@@ -34,6 +34,8 @@ function getAgentActiveTab(currentCheck) {
   jQuery('.detail-tabs-data').hide();
 
   jQuery('#' + currentCheck + '-data').fadeIn();
+
+  console.log(currentCheck);
 }
 
 // ready function
@@ -172,5 +174,10 @@ jQuery(document).ready(() => {
   // agent detail tabs
   jQuery('#agent-detail-data input[name="detail-info"]').on('change', function(){
     getAgentActiveTab(jQuery(this).val());
-});
+  });
+
+  jQuery('.replies h5').on('click', function(e){
+    e.preventDefault();
+    jQuery(this).parent('.replies').toggleClass('opened');
+  });
 })

@@ -106,7 +106,21 @@
 					</div>
 
 					<!-- right side -->
-					<div class="col-md-4">right</div>
+					<div class="col-md-4">
+						<div class="shaded-box">
+							<h5>Contact Agent</h5>
+
+							<div class="btns">
+								<button class="btn btn-warning with-left-icon mb-3">
+									<span><img src="assets/images/phone-white.svg" alt="phone icon"></span> Call Now
+								</button>
+
+								<button type="button" class="btn btn-primary with-left-icon" data-toggle="modal" data-target="#send_message">
+									<span><img src="assets/images/email-white.svg" alt="phone icon"></span> Send Message
+								</button>
+							</div>
+						</div>
+					</div>
 				</div>
 
 				<!-- detail tabs -->
@@ -457,28 +471,224 @@
 								</div>
 
 							</div>
-						</div>	
-						<div class="detail-tabs-data" id="ratings-data">
+						</div>
+						
+						<div class="detail-tabs-data" id="comments-data">
 							<div class="row">
 								<div class="col-md-8">
-									<ul class="rating">
+									<ul class="comments-list">
 										<li>
-											<div class="client-img"></div>
-											<div class="rating-detail">
-												<h4>Ileen Shane</h4>
-												<div class="rating"></div>
-												<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-													Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-													when an unknown printer took a galley of type and scrambled it to make a type 
-													specimen book.
-												</p>
+											<div class="user-dp">
+												<img src="assets/images/avatar-2.jpg" alt="" />
+											</div>
+
+											<h4>Ileen Shane</h4>
+											<span class="comments-time">2 days ago</span>
+
+											<div class="comments">
+												Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+												Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+											</div>
+
+											<div class="replies">
+												<h5>Hide Replies</h5>
+
+												<div class="reply-list">
+													<ul class="comments-list">
+														<li>
+															<div class="user-dp">
+																<img src="assets/images/avatar-2.jpg" alt="" />
+															</div>
+
+															<h4>Ileen Shane</h4>
+															<span class="comments-time">2 days ago</span>
+
+															<div class="comments">
+																Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+																Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+															</div>
+														</li>
+
+														<li>
+															<div class="user-dp">
+																<img src="assets/images/avatar-2.jpg" alt="" />
+															</div>
+
+															<h4>Ileen Shane</h4>
+															<span class="comments-time">2 days ago</span>
+
+															<div class="comments">
+																Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+																Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+															</div>
+														</li>
+													</ul>
+
+													<div class="add-comments">
+														<div class="user-dp">
+															<img src="assets/images/avatar-2.jpg" alt="" />
+														</div>
+														<form>
+															<input type="text" class="form-control" placeholder="Reply With Your Comment" />
+															<button>Add Comment</button>
+														</form>
+													</div>
+												</div>
+
+											</div>
+										</li>
+
+										<li>
+											<div class="user-dp">
+												<img src="assets/images/avatar-2.jpg" alt="" />
+											</div>
+
+											<h4>Ileen Shane</h4>
+											<span class="comments-time">2 days ago</span>
+
+											<div class="comments">
+												Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+												Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+											</div>
+
+											<div class="replies">
+												<h5>Hide Replies</h5>
+												
+												<div class="reply-list">
+													<ul class="comments-list">
+														<li>
+															<div class="user-dp">
+																<img src="assets/images/avatar-2.jpg" alt="" />
+															</div>
+
+															<h4>Ileen Shane</h4>
+															<span class="comments-time">2 days ago</span>
+
+															<div class="comments">
+																Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+																Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+															</div>
+														</li>
+
+														<li>
+															<div class="user-dp">
+																<img src="assets/images/avatar-2.jpg" alt="" />
+															</div>
+
+															<h4>Ileen Shane</h4>
+															<span class="comments-time">2 days ago</span>
+
+															<div class="comments">
+																Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+																Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+															</div>
+														</li>
+													</ul>
+
+													<div class="add-comments">
+														<div class="user-dp">
+															<img src="assets/images/avatar-2.jpg" alt="" />
+														</div>
+														<form>
+															<input type="text" class="form-control" placeholder="Reply With Your Comment" />
+															<button>Add Comment</button>
+														</form>
+													</div>
+												</div>
+
 											</div>
 										</li>
 									</ul>
 								</div>
+							</div>
+						</div>
+
+						<div class="detail-tabs-data" id="ratings-data">
+							<div class="row">
+								<div class="col-md-8">
+									<ul class="reviews-container">
+										<li>
+											<div class="client-img">
+												<img src="assets/images/avatar-2.jpg" alt="" />
+											</div>
+											<div class="rating-detail">
+												<h4>Ileen Shane</h4>
+												<div class="rating star-5"></div>
+												<div class="comments">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+													Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+													when an unknown printer took a galley of type and scrambled it to make a type 
+													specimen book.
+												</div>
+											</div>
+										</li>
+
+										<li>
+											<div class="client-img">
+												<img src="assets/images/avatar-2.jpg" alt="" />
+											</div>
+											<div class="rating-detail">
+												<h4>Ileen Shane</h4>
+												<div class="rating star-5"></div>
+												<div class="comments">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+													Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+													when an unknown printer took a galley of type and scrambled it to make a type 
+													specimen book.
+												</div>
+											</div>
+										</li>
+
+										<li>
+											<div class="client-img">
+												<img src="assets/images/avatar-2.jpg" alt="" />
+											</div>
+											<div class="rating-detail">
+												<h4>Ileen Shane</h4>
+												<div class="rating star-5"></div>
+												<div class="comments">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+													Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+													when an unknown printer took a galley of type and scrambled it to make a type 
+													specimen book.
+												</div>
+											</div>
+										</li>
+
+										<li>
+											<div class="client-img">
+												<img src="assets/images/avatar-2.jpg" alt="" />
+											</div>
+											<div class="rating-detail">
+												<h4>Ileen Shane</h4>
+												<div class="rating star-5"></div>
+												<div class="comments">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+													Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+													when an unknown printer took a galley of type and scrambled it to make a type 
+													specimen book.
+												</div>
+											</div>
+										</li>
+
+										<li>
+											<div class="client-img">
+												<img src="assets/images/avatar-2.jpg" alt="" />
+											</div>
+											<div class="rating-detail">
+												<h4>Ileen Shane</h4> 
+												<div class="rating star-5"></div>
+												<div class="comments">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+													Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+													when an unknown printer took a galley of type and scrambled it to make a type 
+													specimen book.
+												</div>
+											</div>
+										</li>
+									</ul>
+
+									<button class="btn btn-warning with-left-icon mb-3">
+                    <span><img src="assets/images/edit-white.svg" alt="phone icon"></span> Write Your Review
+                  </button>
+								</div>
 							<div>
-						</div>	
-						<div class="detail-tabs-data" id="comments-data">4</div>	
+						</div>
 					</div>
 
 				</div>
