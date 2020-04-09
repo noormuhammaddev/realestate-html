@@ -1,0 +1,228 @@
+.steps-bar {
+  position: absolute;
+  right: 0;
+  top: 25px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 6px;
+    height: 6px;
+    background-color: rgba(181, 198, 220, 1);
+  }
+
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+  li {
+    width: 18px;
+    height: 18px;
+    @include border-radius(50px, 50px, 50px, 50px);
+    border: 3px solid rgba(181, 198, 220, 1);;
+    margin-right: 99px;
+    float: left;
+    font-size: 0;
+    background-color: $white;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &.current {
+      border-color: $dark-blue;
+    }
+
+    &.checked {
+      background: $dark-blue url(../../images/check-white.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      border-color: $dark-blue;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+
+// 
+.property-reserve {
+
+  .step-no-wrapper {
+    .step-numbers {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: $dark-blue;
+  
+      span {
+        font-weight: 700;
+      }
+    }
+
+    h2 {
+      font-weight: 600;
+      font-size: 26px;
+      line-height: 39px;
+    }
+
+    .payment-box {
+      position: absolute;
+      right: 0;
+      top: 0;
+
+      li {
+        display: inline-block;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        @include border-radius(13px, 13px, 13px, 13px);
+        padding: 7px 21px;
+
+        span {
+          display: block;
+
+          &:first-child {
+            font-size: 12px;
+            line-height: 18px;
+            opacity: 0.6;
+          }
+
+          &:last-child {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 21px;
+            color: $dark-blue;
+          }
+        }
+
+      }
+    }
+  }
+
+  // reserve-property-calendar
+  .reserve-property-calendar {
+    .datepicker-inline {
+      width: 387px;
+      background-color: #F9FBFF;
+      @include border-radius(6px, 6px, 6px, 6px);
+      padding: 52px 32px 32px;
+      .table-condensed {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.datepicker {
+  th {
+    &.prev, &.next {
+      position: absolute;
+      right: 0;
+    }
+
+    &.switch {
+      text-align: left;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 22px;
+      position: absolute;
+      top: -30px;
+      /* identical to box height */
+
+      display: flex;
+      align-items: flex-end;
+      letter-spacing: 0.59375px;
+
+      color: #6B7897;
+    }
+
+    &.dow {
+      color: rgba(52, 72, 94, 0.536062);
+      font-weight: 500;
+      font-size: 15.6548px;
+      line-height: 19px;
+    }
+  }
+
+  td {
+    font-weight: 500;
+    font-size: 14.5366px;
+    line-height: 22px;
+    text-align: center;
+    color: #7C86A2;
+    padding: 12px 0;
+  }
+
+  tfoot {
+    display: none;
+  }
+
+  table {
+    tr {
+      td {
+        width: 39px;
+        height: 39px;
+        @include border-radius(100%, 100%, 100%, 100%);
+
+        &.active.active {
+          background: $orange;
+          text-shadow: none;
+
+          &:hover {
+            background: $orange;
+          }
+        }
+
+        &.old, &.new {
+          color: #E1E4E7;
+        }
+        &:hover {
+          background: rgba(250, 199, 173, 1);
+        }
+
+
+      }
+    }
+  }
+}
+
+.reserve-bar {
+  background-color: $white;
+  padding: 12px 0;
+  position: fixed;
+  bottom: 1px;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  @include box-shadow(0, -1px, 3px, #e6edf7);
+  
+
+  .price {
+    float: left;
+    span {
+      display: inline-block;
+
+      &.amount {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 45px;
+        color: $primary-dim;
+        margin-right: 12px;
+      }
+      &.label {
+        opacity: 0.6;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+      }
+    }
+  }
+
+  .action-wrapper {
+    float: right;
+    .cta {
+      min-width: 171px;
+    }
+  }
+}
