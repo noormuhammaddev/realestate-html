@@ -26,31 +26,30 @@
 				<div class="page-title"><h1>Reserve Property</h1></div>
 
 				<div class="step-content">
+					<div class="step-no-wrapper">
+						<div class="step-info">
+							<div class="step-numbers">Step <span>1</span> of 3</div>
+							<h2>Select Move-in Date</h2>
+						</div>
+						<ul class="payment-box">
+							<li>
+								<span>Payments</span>
+								<span>1 Payment</span>
+							</li>
+						</ul>
+					</div>	
 					<div class="row">
-						<div class="col-md-5">
+						<div class="col-lg-5 col-md-8">
+							<div id="reserve-property" class="reserve-property-calendar"  data-date-format="dd-mm-yyyy"></div>
 
-							<div class="step-no-wrapper">
-								<div class="step-numbers">Step <span>1</span> of 3</div>
-								<h2>Select Move-in Date</h2>
-
-								<ul class="payment-box">
-									<li>
-										<span>Payments</span>
-										<span>1 Payment</span>
-									</li>
-								</ul>
-
-								<div id="reserve-property" class="reserve-property-calendar"  data-date-format="dd-mm-yyyy"></div>
-
-								<div class="reserve-bar">
-									<div class="container">
-										<div class="price">
-											<span class="amount">2,560 AED</span>
-											<span class="label">Reservation Fee</span>
-										</div>
-										<div class="action-wrapper">
-											<a href="#" class="btn btn-primary cta">Continue</a>
-										</div>
+							<div class="reserve-bar">
+								<div class="container">
+									<div class="price">
+										<span class="amount">2,560 AED</span>
+										<span class="label">Reservation Fee</span>
+									</div>
+									<div class="action-wrapper">
+										<a href="#" class="btn btn-primary cta">Continue</a>
 									</div>
 								</div>
 							</div>

@@ -38,6 +38,12 @@ function getAgentActiveTab(currentCheck) {
   console.log(currentCheck);
 }
 
+// paymentMethodTabs
+function paymentMethodTabs(currentCheck) {
+  jQuery('.tab-content').hide();
+  jQuery('#' + currentCheck + '_data').fadeIn();
+}
+
 // ready function
 jQuery(document).ready(() => {
   // init AOS
@@ -176,8 +182,14 @@ jQuery(document).ready(() => {
     getAgentActiveTab(jQuery(this).val());
   });
 
+  jQuery('#payment_method input[name="paymentMethod"]').on('change', function(){
+    paymentMethodTabs(jQuery(this).val());
+  });
+
   jQuery('.replies h5').on('click', function(e){
     e.preventDefault();
     jQuery(this).parent('.replies').toggleClass('opened');
   });
+
+
 })
