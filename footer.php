@@ -28,19 +28,36 @@
 						<button type="button" class="btn btn-warning">Subscribe
 					</div>	
 				</form>
-				<h3>Follow Us</h3>
+
+				<h3 class="coming-soon">Coming Soon</h3>
+				<div class="download-apps">
+					<a href="#" class="mr-2">
+						<img src="assets/images/apple-store.svg" alt="" />
+					</a>
+
+					<a href="#">
+						<img src="assets/images/play-store.svg" alt="" />
+					</a>
+				</div>
+					
+			</div>
+		</div>
+
+		<!-- copy right text -->
+		<div class="footer-bottom">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="copy-right">© 2020 abc all right reserved.</div>
+				</div>
+				<div class="col-md-6">
 					<div class="social-media">
 						<a href="#" class="fb"></a>
 						<a href="#" class="insta"></a>
 						<a href="#" class="twitter"></a>
 						<a href="#" class="gplus"></a>
 					</div>
+				</div>
 			</div>
-		</div>
-
-		<!-- copy right text -->
-		<div class="copy-right">
-		© 2020 abc all right reserved.
 		</div>
 	</div>
 </footer>

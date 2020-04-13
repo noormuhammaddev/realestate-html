@@ -1,14 +1,18 @@
 
 .recomended-properties {
 
-  h2 {
+  h3 {
     margin-bottom: 30px;
-    padding-right: 150px;
   }
   .show-more {
     position: absolute;
     right: 15px;
-    top: 14px;
+    top: 6px;
+  }
+
+  .radio-group {
+    max-width: 240px;
+    margin-bottom: 40px;
   }
 
 }
@@ -180,5 +184,11 @@
     img {
       width: 100%;
     }
+  }
+}
+
+.pro-detail-tabs-content {
+  .tab-content {
+    display: none;
   }
 }

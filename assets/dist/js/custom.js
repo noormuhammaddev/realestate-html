@@ -44,6 +44,20 @@ function paymentMethodTabs(currentCheck) {
   jQuery('#' + currentCheck + '_data').fadeIn();
 }
 
+// paymentMethodTabs
+function propDetailTabs(currentCheck) {
+  jQuery('.tab-content').hide();
+  jQuery('#' + currentCheck + '_data').fadeIn();
+}
+
+// how hide tabs content 
+function showHideTabsContent(currentElement){
+  const element = currentElement.val() + '_data';
+  console.log(element); 
+  currentElement.parents('.tabs-container').find('.tabs-content .content').hide();
+  jQuery('#' + element).show();
+}
+
 // ready function
 jQuery(document).ready(() => {
   // init AOS
@@ -110,9 +124,6 @@ jQuery(document).ready(() => {
   jQuery('.filter-toggle .toggle').on('click', function(){
     filterShowHide(jQuery(this).attr('id'));
   });
-
-
-
 
   // popular properties
   const popular_property = jQuery('#popular-properties');
@@ -186,10 +197,19 @@ jQuery(document).ready(() => {
     paymentMethodTabs(jQuery(this).val());
   });
 
+  jQuery('#prop_detail_tabs input').on('change', function(){
+    paymentMethodTabs(jQuery(this).val());
+  });
+
   jQuery('.replies h5').on('click', function(e){
     e.preventDefault();
     jQuery(this).parent('.replies').toggleClass('opened');
   });
 
+  jQuery('.radio-group.tabs input').on('change', function(){
+    showHideTabsContent(jQuery(this));
+  });
+
 
 })
+

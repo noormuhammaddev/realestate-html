@@ -7,6 +7,14 @@ footer{
 		font-size: 22px;
 		color: $white;
 		margin-bottom: 20px;
+
+		&.coming-soon {
+			margin-bottom: 30;
+
+			@include breakpoint(md) {
+				margin-bottom: 20px;
+			}
+		}
 	}
 
 	ul{
@@ -98,47 +106,56 @@ footer{
 		}
 	}
 
-	.social-media{
-		a{
-			width: 30px;
-			height: 30px;
-			margin-right: 30px;
-			
-			&.fb{
-				background-image: url(../../images/icon_facebook.svg);
-				background-repeat: no-repeat;
-				background-position: center;
-			}
-
-			&.insta{
-				background-image: url(../../images/icon_insta.svg);
-				background-repeat: no-repeat;
-				background-position: center;
-			}
-
-			&.twitter{
-				background-image: url(../../images/icon_twitter.svg);
-				background-repeat: no-repeat;
-				background-position: center;
-			}
-
-			&.gplus{
-				background-image: url(../../images/icon_google+.svg);
-				background-repeat: no-repeat;
-				background-position: center;
-			}
-		}
-		
-	}
-
-	.copy-right{
+	.footer-bottom{
 		color: $white;
 		border-top: 1px solid $light-blue;
 		margin-top: 80px;
-		padding-top: 13px;
+		padding-top: 30px;
 
 		@include breakpoint(md) {
 			margin-top: 30px;
+		}
+
+		.social-media{
+			text-align: right;
+			
+			@include breakpoint(md) {
+				text-align: left;
+			}
+
+			a{
+				width: 30px;
+				height: 30px;
+				margin-right: 30px;
+
+				&:last-child {
+					margin-right: 0;
+				}
+				
+				&.fb{
+					background-image: url(../../images/icon_facebook.svg);
+					background-repeat: no-repeat;
+					background-position: center;
+				}
+	
+				&.insta{
+					background-image: url(../../images/icon_insta.svg);
+					background-repeat: no-repeat;
+					background-position: center;
+				}
+	
+				&.twitter{
+					background-image: url(../../images/icon_twitter.svg);
+					background-repeat: no-repeat;
+					background-position: center;
+				}
+	
+				&.gplus{
+					background-image: url(../../images/icon_google+.svg);
+					background-repeat: no-repeat;
+					background-position: center;
+				}
+			}
 		}
 	}
 
