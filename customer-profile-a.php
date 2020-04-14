@@ -11,7 +11,7 @@
 
     <section class="customer-detail">
       <div class="container">
-        <!--  -->
+        <!-- breadcrums -->
         <ul class="breadcrumb-realestate">
           <li><a href="/">Home</a></li>
           <li class="active">My Profile</li>

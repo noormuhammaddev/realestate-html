@@ -916,3 +916,21 @@ hr {
     }
   }
 }
+
+// upload file
+.upload-file-add {
+  width: 44px;
+  height: 44px;
+  background: url(../../images/add-blue.svg);
+  margin: -23px auto 30px;
+
+  input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+  }
+}

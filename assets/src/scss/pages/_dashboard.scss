@@ -214,67 +214,67 @@
           }
         }
       }
+    }
+  }
+}
 
-      .more-info {
-        &:after {
-          content: '';
-          display: table;
-          clear: both;
+.more-info {
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+  .item {
+    width: 20%;
+    float: left;
+    padding-left: 25px;
+
+    .icon {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 17px;
+
+      img {
+        max-width: 100%;
+      }
+    }
+
+    h4 {
+      font-size: 11px;
+      line-height: 16px;
+      font-weight: 500;
+      opacity: 0.4;  
+      margin-bottom: 0px;
+    }
+
+    span {
+      font-size: 13px;
+      line-height: 19px;
+      opacity: 0.9;
+      font-weight: 500;
+
+      &.price {
+        font-weight: 700;
+
+        font {
+          font-size: 10px;
+          opacity: 0.3;
+          color: $primary;
+          font-weight: 500;
+          margin-left: 6px;
         }
 
-        .item {
-          width: 20%;
-          float: left;
-          padding-left: 25px;
-
-          .icon {
-            position: absolute;
-            left: 0;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 17px;
-
-            img {
-              max-width: 100%;
-            }
-          }
-
-          h4 {
-            font-size: 11px;
-            line-height: 16px;
-            font-weight: 500;
-            opacity: 0.4;  
-            margin-bottom: 0px;
-          }
-
-          span {
-            font-size: 13px;
-            line-height: 19px;
-            opacity: 0.9;
-            font-weight: 500;
-
-            &.price {
-              font-weight: 700;
-
-              font {
-                font-size: 10px;
-                opacity: 0.3;
-                color: $primary;
-                font-weight: 500;
-                margin-left: 6px;
-              }
-
-              &.blue {
-                color: $dark-blue;
-              }
-
-              &.orange {
-                color: $orange;
-              }
-
-            }
-          }
+        &.blue {
+          color: $dark-blue;
         }
+
+        &.orange {
+          color: $orange;
+        }
+
       }
     }
   }
